@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #020617, #0f172a, #1e3a5f);
+    color: white;
+}
+
+/* NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #081224;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #a855f7;
+}
+
+/* LAYOUT */
+
+main{
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 220px;
+    min-height: 100vh;
+    background: #081224;
+    padding: 25px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar li{
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover{
+    background: #1e293b;
+    color: #a855f7;
+}
+
+/* PERFIL */
+
+.perfil{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.perfil img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil h3{
+    margin-top: 10px;
+}
+
+.perfil p{
+    color: #94a3b8;
+}
+
+.perfil span{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #7c3aed;
+}
+
+/* CONTEÚDO */
+
+.content{
+    flex: 1;
+    padding: 25px;
+}
+
+/* CARDS SUPERIORES */
+
+.top-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.info-card{
+    flex: 1;
+    min-width: 220px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.info-card h3{
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.info-card p{
+    font-size: 32px;
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+/* CARD PRINCIPAL */
+
+.card{
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h1,
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card img{
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* BANNER */
+
+.banner-home{
+    width: 180px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* TEXTO */
+
+.subtitulo{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* TEXTAREA */
+
+textarea{
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+/* BOTÕES */
+
+button{
+    background: linear-gradient(90deg,#7c3aed,#a855f7);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+/* RESULTADO */
+
+#resultado{
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f3f4f6;
+}
+
+/* TABELAS */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    color: #7c3aed;
+}
+
+/* PESQUISA */
+
+.pesquisa{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* ALERTAS */
+
+.notificacao{
+    background: #7c3aed;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alerta-home{
+    background: #facc15;
+    color: black;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* RODAPÉ */
+
+footer{
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.sidebar li{
+    list-style: none;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.perfil{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.perfil p{
+    margin-top: 10px;
+}
+
+.content{
+    flex: 1;
+    padding: 25px;
+}
+
+.card{
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.modo-claro{
+    background: #f8fafc;
+    color: black;
+}

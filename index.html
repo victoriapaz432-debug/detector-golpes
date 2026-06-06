@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🏦 Secure Bank
+        </div>
+
+        <div class="menu">
+
+            <a href="index.html">Dashboard</a>
+            <a href="Seguranca.html">Segurança</a>
+            <a href="Relatorios.html">Relatórios</a>
+            <a href="Configuracao.html">Configurações</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <aside class="sidebar">
+
+            <div class="perfil">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+               <h3>Victoria Paz</h3>
+<p>Administrador do Sistema</p>
+
+<span>
+🛡 PIX Protegido
+</span>
+
+<p>
+Último acesso:
+03/06/2026
+</p>
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">🏦 Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="Seguranca.html">🛡 Segurança</a>
+                </li>
+
+                <li>
+                    <a href="Relatorios.html">📄 Relatórios</a>
+                </li>
+
+                <li>
+                    <a href="Configuracao.html">⚙ Configurações</a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <section class="content">
+
+            <div class="notificacao">
+
+                🔔 12 tentativas de golpe bloqueadas hoje
+
+            </div>
+
+            <div class="top-cards">
+
+                <div class="info-card">
+
+                    <h3>Golpes Detectados</h3>
+
+                    <p>128</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Mensagens Analisadas</h3>
+
+                    <p>542</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Nível de Segurança</h3>
+
+                    <p>Alto</p>
+
+                </div>
+
+            </div>
+
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            class="banner-home">
+
+            <div class="card">
+
+                <h2>⚠ Últimas Fraudes Detectadas</h2>
+
+                <p>Golpe PIX bloqueado hoje</p>
+
+                <p>Link falso detectado</p>
+
+                <p>SMS suspeito removido</p>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png"
+                width="100">
+
+                <h1>Detector de Golpes</h1>
+
+                <p>
+
+                    Sistema inteligente para
+                    identificação de fraudes bancárias.
+
+                </p>
+
+                <textarea
+                id="mensagem"
+                placeholder="Cole aqui a mensagem suspeita..."></textarea>
+
+                <button onclick="analisarMensagem()">
+
+                    Analisar Mensagem
+
+                </button>
+
+                <div id="resultado"></div>
+                <h3>📝 Histórico de Análises</h3>
+
+<ul id="historico"></ul>
+
+            </div>
+            <div class="card">
+
+    <h2>🎨 Aparência</h2>
+
+    <p>Alterar entre tema escuro e claro.</p>
+
+    <button onclick="trocarTema()">
+        🌙 Trocar Tema
+    </button>
+
+</div>
+
+            <div class="card">
+
+                <h2>📋 Últimas Transações</h2>
+
+                <table>
+
+                    <tr>
+
+                        <th>Usuário</th>
+                        <th>Status</th>
+                        <th>Valor</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Veronica Lodge</td>
+                        <td>✅ Seguro</td>
+                        <td>R$ 450</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>PIX Suspeito</td>
+                        <td>⚠ Bloqueado</td>
+                        <td>R$ 2.000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Dean Di Laurent</td>
+                        <td>✅ Seguro</td>
+                        <td>R$ 120</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        Projeto acadêmico desenvolvido por
+        Victoria Paz • Segurança Digital
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
