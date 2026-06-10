@@ -1,3 +1,9 @@
+// Trava e destrava o botão conforme o textarea
+document.getElementById("mensagem").addEventListener("input", function () {
+    let btn = document.getElementById("btnAnalisar");
+    btn.disabled = this.value.trim() === "";
+});
+
 function analisarMensagem() {
     let mensagem = document.getElementById("mensagem").value;
     let resultado = document.getElementById("resultado");
