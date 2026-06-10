@@ -10,12 +10,25 @@ function analisarMensagem() {
         mensagem.includes("urgente") ||
         mensagem.includes("senha") ||
         mensagem.includes("clique aqui") ||
-        mensagem.includes("link")
+        mensagem.includes("link") ||
+        mensagem.includes("cpf") ||
+        mensagem.includes("cartão") ||
+        mensagem.includes("prêmio") ||
+        mensagem.includes("ganhou")
     ) {
-        resultado.innerHTML = "⚠️ Possível golpe detectado!";
+        resultado.innerHTML = "🔴 Alto risco de golpe detectado!";
         resultado.style.color = "red";
+
+    } else if (
+        mensagem.includes("banco") ||
+        mensagem.includes("conta") ||
+        mensagem.includes("atualizar")
+    ) {
+        resultado.innerHTML = "🟡 Mensagem suspeita. Verifique antes de confiar.";
+        resultado.style.color = "orange";
+
     } else {
-        resultado.innerHTML = "✅ Mensagem aparentemente segura.";
+        resultado.innerHTML = "🟢 Mensagem aparentemente segura.";
         resultado.style.color = "green";
     }
 
@@ -35,6 +48,13 @@ function entrarSistema() {
 
 function sairSistema() {
     window.location.href = "login.html";
+}
+
+function salvarConfig() {
+    let config = document.getElementById("configSalva");
+    if (config) {
+        config.innerHTML = "⚙️ Configurações atualizadas com sucesso.";
+    }
 }
 
 setInterval(function () {
